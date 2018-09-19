@@ -7,7 +7,7 @@
 ## Description
 
 The task was to make a 1:1 clone of the image provided using HTML and CSS.
-[alt text](https://github.com/Grzana/SitOnChair_Workshop/blob/master/4_Warsztaty/warsztat1.jpg)
+![alt text](https://github.com/Grzana/SitOnChair_Workshop/blob/master/4_Warsztaty/warsztat1.jpg)
  
 The webpage was created based on knowledge of only HTML and CSS. There is no RWD implementation.
 The aim of the workhop was to improve skills connected to:
