@@ -5,8 +5,11 @@
  https://grzana.github.io/SitOnChair_Workshop/
  
 ## Description
+
+The task was to make a 1:1 clone of the image provided using HTML and CSS.
+
  
-The webpage was created based on knowledge of only HTML and CSS. There is no RWD implementation. 
+The webpage was created based on knowledge of only HTML and CSS. There is no RWD implementation.
 The aim of the workhop was to improve skills connected to:
 ### HTML
 * webpage layout - using wrapper, heading, footer;
