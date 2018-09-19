@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+/*sekcja HEADER*/
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.txt__decor {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+    color: #24ba9e;
+}
+
+p.logo {
+    display: inline-block;
+    line-height: 40px;
+    margin-top: 7px
+}
+
+ul.header__nav {
+    position: relative;
+    list-style: none;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 6px;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+li.header__nav-item {
+    display: inline-block;
+    margin-left: 36px;
+    position: relative;
+}
+
+ul.header__submenu {
+    position: absolute;
+    top: 43px;
+    left: -26px;
+    background: #000000;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 300;
+    list-style: none;
+    z-index: 2;
+}
+
+div.submenu__arrow {
+    background-color: #000000;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 39px;
+    left: 12px;
+    z-index: 1;
+}
+
+li.header__submenu-item {
+    line-height: 29px;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+li.header__nav-item a:hover ul.header__submenu {
+    background-color: red;
+}
+
+/*sekcja INTRO*/
+
+section {
+    width: 1050px;
+}
+
+section.intro {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(209,206,215,1) 100%);
+    height: 440px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    line-height: 440px;
+}
+
+.intro__arrow:first-child {
+    content: "";
+    color: #24ba9e;
+    font-size: 74px;
+    position: relative;
+    z-index: 5;
+}
+
+ul.intro__slider {
+    list-style: none;
+}
+
+.intro__slider li {
+    display: none;
+}
+
+.intro__slider .visible{
+    display: inline-block;
+    height: 340px;
+    position: relative;
+    left: -46px;
+    top: 73px;
+}
+
+.intro__text {
+    position: relative;
+    top: 121px;
+    right: 109px;
+    width: 657px;
+    height: 220px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 33px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    position: relative;
+}
+
+.intro__text p {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    top: 17px;
+}
+
+.intro__text div {
+    font-size: 19px;
+    line-height: 45px;
+    width: 229px;
+    height: 45px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #24ba9e;
+    border-radius: 10px;
+    position: relative;
+    bottom: -33px;
+    right: -83px;
+}
+
+
+.intro__arrow:last-child {
+    content: "";
+    color: #24ba9e;
+    font-size: 74px;
+    position: relative;
+    right: 11px;
+}
+
+/*sekcja FEATURED*/
+
+section.featured {
+    display: flex;
+    justify-content: space-between;
+    height: 302px;
+    background-color: #ffffff;
+}
+
+section.featured > div {
+    width: 288px;
+    height: 196px;
+    float: left;
+    border: 1px solid #c2c2c2;
+    margin-top: 22px;
+    margin-right: 17px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section.featured > div:first-child {
+    background-image: url("../images/box1_img.jpg");
+}
+
+section.featured > div:nth-child(2) {
+    background-image: url("../images/box2_img.jpg");
+}
+
+section.featured > div:last-child {
+    width: 295px;
+    height: 220px;
+    margin-right: 10px;
+    background-color: #ffffff;
+}
+
+div.featured__title {
+    width: 100%;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 13px;
+}
+
+#featured__description {
+    top: 10px;
+}
+
+.featured__title > h3 {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    border-bottom: 5px solid #24ba9e;
+    width: 119px;
+    margin: 14px;
+    margin-bottom: 0;
+}
+
+#featured__description p{
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 16px;
+}
+
+/*sekcja CENNIK*/
+
+section.pricelist {
+    display: flex;
+    justify-content: space-around;
+    height: 631px;
+    background-color: #f1f1f1;
+    position: relative;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    border-bottom: 7px solid #24ba9e;
+    width: 278px;
+    padding-bottom: 7px;
+    position: absolute;
+    left: 60px;
+    top: 38px;
+}
+
+/* div z cennikiem*/
+
+div.pricelist__box {
+    width: 287px;
+    height: 436px;
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #c2c2c2;
+    top: 137px;
+    left: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+}
+
+div.pricelist__decorOut {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #c2c2c2;
+    background-color: #ffffff;
+    position: relative;
+    top: -31px;
+    margin-left: 116px;
+}
+
+div.pricelist__decorIn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #c2c2c2;
+    position: absolute;
+    margin: 13px;
+}
+
+div.pricelist__box-title {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    color: #24ba9e;
+    font-size: 20px;
+    top: 24px;
+}
+
+div.pricelist__box-price {
+    width: 111px;
+    height: 111px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 23px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #c4c4c4;
+    border: 1px solid #c2c2c2;
+    font-family: 'Raleway', Arial, sans-serif;
+
+} 
+
+div.pricelist__box-priceI {
+    position: relative;
+    top: 20px;
+}
+
+div.pricelist__box-price span:first-child {
+    font-size: 40px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+}
+
+div.pricelist__box-price span:last-child {
+    font-size: 14px;
+    line-height: 40px;
+    vertical-align: text-bottom;
+}
+
+.pricelist__box-price p:last-child {
+    font-size: 10px;
+    line-height: 10px;
+}
+
+ul.pricelist__box-options {
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 24px;
+    width:100%;
+    font-size: 20px;
+    position: relative;
+    color: #9f9f9f;
+}
+
+.pricelist__box-options li:nth-child(2n+1)  {
+    background-color: #e4e4e4;
+    padding: 7px;
+}
+
+.pricelist__box-options li:nth-child(2n) {
+    background-color: #f1f1f1;
+    padding: 7px;
+}
+
+div.pricelist__box-apply {
+    background-color: #24ba9e;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 30px;
+    width: 107px;
+    height: 30px;
+    position: absolute;
+    bottom: 17px;
+    display: block;
+    margin-left: 93px;
+}
+
+/* koniec diva z cennikiem*/
+
+/*div środkowy z cennikiem*/
+
+div#middle {
+    background-color: #24ba9e;
+    border: 1px solid #24ba9e;
+}
+
+div#middle div.pricelist__box-title {
+    color: #ffffff;
+}
+
+div#middle div.pricelist__box-price {
+    background-color: #ffffff;
+    color: #24ba9e;
+    border: 1px solid #24ba9e;
+
+} 
+
+div#middle div.pricelist__decorOut {
+    border: 1px solid #24ba9e;
+    background-color: #24ba9e;
+}
+
+div#middle div.pricelist__decorIn {
+    background-color: #ffffff;
+}
+
+div#middle .pricelist__box-options li:nth-child(2n+1)  {
+    background-color: #ffffff;
+}
+
+div#middle div.pricelist__box-apply {
+    background-color: #ffffff;
+    color: #24ba9e;
+}
+
+/*koniec diva środkowego z cennikiem*/
+
+/*sekcja CONTACT*/
+
+section.contact {
+    height: 480px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+div.contact__form {
+    position: relative;
+    width: 63%;
+    height: 100%;
+}
+
+input {
+    border: 1px solid #24ba9e;
+    padding: 7px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 33px;
+    width: 96%;
+    margin: 17px;
+    margin-left: 3px;
+    position: relative;
+    top: 84px;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid #24ba9e;
+    padding: 5px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 30px;
+    position: relative;
+    top: 88px;
+    margin-left: 3px;
+    width: 553px;
+    height: 161px;
+}
+
+div.contact__send {
+    position: relative;
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.contact__send-img {
+    width: 238px;
+    height: 399px;
+    margin-top: 73px;
+    margin-left: 43px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url("../images/red_chair.png");
+}
+
+div.contact__send-checkbox {
+    width: 310px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    top: 28px;
+    left: 24px;
+}
+
+div.checkbox-icon {
+    width: 55px;
+    height: 46px;
+    background-size: 77%;
+    position: relative;
+    border: 1px solid #24ba9e;
+    cursor: pointer;
+}
+
+.checkbox-icon-checked {
+    background: url("../images/form_ok.jpg") no-repeat center;
+}
+
+div.checkbox-text {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 5px;
+    font-size: 17px;
+}
+
+div.contact__send-submit {
+    width: 300px;
+    height: 62px;
+    position: absolute;
+    left: 25px;
+    bottom: 50px;
+    background-color: #24ba9e;
+    color: #ffffff;
+    font-size: 27px;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*sekcja FOOTER*/
+
+section.footer {
+    height: 70px;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 70px;
+    color: #c2c2c2;
+}
+
+div.footer__right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.footer__media {
+    display: flex;
+    justify-content: flex-start;
+    height: 35px;
+    margin-right: 77px;
+}
+
+.footer__media div {
+    width: 35px;
+    height:31px;
+    margin-top: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.footer__media a:nth-child(1)>div{
+    background-image: url('../images/flickr.png');
+}
+
+div.footer__media a:nth-child(2)>div{
+    background-image: url('../images/vimeo.png');
+}
+
+div.footer__media a:nth-child(3)>div{
+    background-image: url('../images/pinterest.png');
+}
+
+div.footer__media a:nth-child(4)>div{
+    background-image: url('../images/twitter.png');
+}
+
+div.footer__logo {
+    font-size: 16px;
+}
+
+.footer__logo span {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 700;
+}
